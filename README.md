@@ -13,6 +13,8 @@ npm run dev
 
 Other checks: `npm run build`, `npm run typecheck`, `npm run lint`, and `npm run test`.
 
+**Live demo:** [trip-splitter-wine.vercel.app](https://trip-splitter-wine.vercel.app)
+
 The expense form, validation, split options, listing, filters, balances, deletion, and browser persistence are implemented. The "Expense added" notice is carried in router state and may reappear if the Expenses page is reloaded. Member editing is intentionally out of scope; update the bundled member list before starting a trip.
 
 ## Three decisions and why
