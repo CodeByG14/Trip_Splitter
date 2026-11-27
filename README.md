@@ -25,7 +25,12 @@ The expense form, validation, split options, listing, filters, balances, deletio
 
 ## What I would improve with another day
 
-Add a member-management screen, provide a more detailed balance settlement view, and run browser-based accessibility checks with keyboard and screen-reader testing.
+- **Member management:** let the group add, rename and remove members instead of using the bundled list, and save them in local storage. A member who appears in any expense could not be removed, so no expense ends up pointing at someone who no longer exists.
+- **A fuller balance view:**
+  - Show a "who pays whom" settlement plan, like "Kabir pays Aarav ₹4,200". Matching the biggest debtor with the biggest creditor, repeatedly, settles everyone with at most one fewer payment than there are members, so the group makes a handful of transfers instead of many.
+  - Give each member a breakdown of what they paid, what their share was, and the net result, so the number can be checked.
+  - Add a "mark as settled" action that records a payment and brings those balances to zero.
+- **Personal view with a login session:** each member signs in and sees their own expenses and balance... This needs a backend with authentication, since local storage can't share data between devices.
 
 ## How I used AI tools
 
